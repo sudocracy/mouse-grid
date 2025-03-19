@@ -3,7 +3,7 @@ A [Hammerspoon][1] module that lets you move the mouse pointer to a certain loca
 
 Ever wanted to navigate your mac using only the keyboard? Tools like [vimium][2] and [vimac][3] get you close, but they only show hints on the actual UI elements on the screen. But what if you wanted to jump to an arbitrary location on the screen?
 
-This module let's you bind a shortcut that displays a grid on the screen with a hint for each cell. The same shortcut rotates the grid onto the next monitor, and ESC removes the grid. Once on the desired monitor/screen, typing the cell hint moves the mouse pointer there.
+This module lets you bind a shortcut that displays a grid on the screen with a hint for each cell. Using the shortcut repeatedly rotates the grid onto additional monitors, and typing the hint or ESC closes the grid. The idea is that once you are on the desired monitor/screen, you type the cell hint to move the mouse there.
 
 ![screenshot-of-mouse-grid](demo.jpg)
 
@@ -11,7 +11,7 @@ From there, if you want to do smaller movements, you can add some shortcuts to t
 
 ## Installation
 
-Add the following to your Hammerspoon init file:
+Add the following to your Hammerspoon init file to activate the grid. Pressing `⌘ + ⌃ + ⌥ + 8` activates the grid, but obviously you can change this shortcut when you configure the module.
 
 ```
 -- MOUSE GRID: Shows a grid on active screen and lets you type an address
