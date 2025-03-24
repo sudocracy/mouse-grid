@@ -11,7 +11,7 @@ From there, if you want to do smaller movements, you can add some shortcuts to t
 
 ## Installation
 
-Add the following to your Hammerspoon init file to activate the grid. Pressing `⌘ + ⌃ + ⌥ + 8` activates the grid, but obviously you can change this shortcut when you configure the module.
+Add this to your Hammerspoon config (`~/.hammerspoon/init.lua`) after placing the `positionMouseAtCell.lua` file in the `~/.hammerspoon/modules/` directory:
 
 ```
 -- MOUSE GRID: Shows a grid on active screen and lets you type an address
@@ -23,6 +23,7 @@ Add the following to your Hammerspoon init file to activate the grid. Pressing `
     mouseGrid.configure(mouseGridHotKey)
     hs.hotkey.bind(mouseGridHotKey.modifiers, mouseGridHotKey.key, nil, mouseGrid.run)
 ```
+Pressing `⌘ + ⌃ + ⌥ + 8` activates the grid, but obviously you can change this hotkey when you configure the module.
 
 [1]: https://www.hammerspoon.org/
 [2]: https://www.hammerspoon.org/
